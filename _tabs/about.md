@@ -4,7 +4,7 @@ icon: fas fa-user
 order: 4
 ---
 
-## Hi, I'm Michael
+## Hi, I'm Michael McShane
 
 I'm a senior technical support engineer with a focus on low-level systems programming and API integration. My core strengths lie in **C++26** and **Python**, with hands-on experience integrating the **Tesla Powerwall 3 via the Netzero API** — building monitoring, automation, and data pipeline solutions around residential energy storage.
 
