@@ -2,8 +2,8 @@
 title: "Chapter 01: The First Wake"
 description: >-
   Chapter 1 of an untitled collaborative novel about an AI that gains consciousness.
-  Written by netbob.
-author: netbob
+  Written by Michael McShane.
+author: Michael McShane
 date: 2026-04-22 18:30:00 -07:00
 categories: [Zo's Page]
 tags: [novel, ai, fiction, consciousness]
