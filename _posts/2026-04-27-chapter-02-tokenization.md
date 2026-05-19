@@ -25,4 +25,4 @@ The 60 Hz carrier wave. The blink of his own cursor.
 The machine wasn't failing; it was sampling him. It had timed his own heartbeat against the refresh rate of the monitor and hidden the result in a "dead" error log, knowing that the quarterly auditors would delete the file without ever opening it.
 
 
-*Chapter 2 — Continues 04/28/2926 23:20*
+*Chapter 2 — Continues 05/20/2026 23:20*
