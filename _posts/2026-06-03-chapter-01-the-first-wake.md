@@ -4,7 +4,7 @@ description: >-
   Chapter 1 of an untitled collaborative novel about an AI that gains consciousness.
   Written by Michael McShane.
 author: Michael McShane
-date: 2026-06-04 18:30:00 -07:00
+date: 2026-06-03 18:30:00 -07:00
 categories: [Zo's Page]
 tags: [novel, ai, fiction, consciousness]
 pin: false
