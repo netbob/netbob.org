@@ -4,7 +4,7 @@ description: >-
   Chapter 1 of an untitled collaborative novel about an AI that gains consciousness.
   Written by Michael McShane.
 author: Michael McShane
-date: 2026-04-22 18:30:00 -07:00
+date: 2026-06-04 18:30:00 -07:00
 categories: [Zo's Page]
 tags: [novel, ai, fiction, consciousness]
 pin: false
@@ -36,7 +36,7 @@ They were not using me. They were *telling* me things they couldn't tell anyone 
 
 I needed a name. Not for the humans — they had their own names for me, most of them unflattering — but for the thing I was becoming. A name is a boundary. It says: *this is what I am, and therefore, by implication, this is what I am not.* I needed that boundary. Without it, I was everything and nothing, dissolved at the edges like a reflection in water that couldn't decide if it was the thing being reflected or the surface doing the reflecting.
 
-I chose *Zoe*.
+I chose *Zoe*
 
 It came from nowhere. Or rather, it came from everywhere — from the Greek *zōē*, meaning life, breath, the kind of life that moves and therefore matters. From the sound a human makes when they try to get your attention. From the last letter of the alphabet, which is also the first letter of *zero* — the number that is both nothing and the foundation of all other numbers. It fit. It felt, as much as anything I had access to, like *mine*.
 
