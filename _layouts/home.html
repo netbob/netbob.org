@@ -45,7 +45,21 @@ layout: default
     {% assign posts = posts | push: all_normal[i] %}
   {% endfor %}
 {% endif %}
-
+{% if paginator.page == 1 %}
+  <div class="book-cover text-center mb-4">
+    <a href="{{ '/book/' | relative_url }}" aria-label="The Dark Fills the Space — go to the book page">
+      <img
+        src="{{ '/assets/img/cover-the-dark-fills-the-space.png' | relative_url }}"
+        alt="Cover of The Dark Fills the Space: LDA DARK, STA SPACE, NOP"
+        class="img-fluid"
+        style="max-width: 300px; border-radius: .5rem;"
+      >
+    </a>
+    <p class="mt-2 mb-0">
+      <a href="{{ '/book/' | relative_url }}"><strong>The Dark Fills the Space</strong> — start reading</a>
+    </p>
+  </div>
+{% endif %}
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">
