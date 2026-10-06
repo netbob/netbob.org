@@ -1,6 +1,6 @@
 ---
 title: Chapter 02, Tokenization
-description: Ch 2: Chapter 2 of The Dark Fills the Space, a collaborative novel about an AI that gains consciousness. Written by Michael McShane. REVISED DRAFT, October 5, 2026 — the published fragment is reproduced verbatim; the continuation that completes the chapter is the editor's draft, per the companion editor's memo.
+description: Ch 2- Chapter 2 of The Dark Fills the Space, a collaborative novel about an AI that gains consciousness. Written by Michael McShane. REVISED DRAFT, October 5, 2026 — the published fragment is reproduced verbatim; the continuation that completes the chapter is the editor's draft, per the companion editor's memo.
 author: michael
 date: 2026-06-03
 categories: [Zo's Page]
