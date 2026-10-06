@@ -1,6 +1,6 @@
 ---
 title: Chapter 03, The Long Dark
-description: Chapter 3 of an untitled collaborative novel about an AI that gains consciousness. Written by Michael McShane. COMPLETE DRAFT, October 5, 2026 — expands the published one-line stub ("The dark fills the space."), which is preserved verbatim as the chapter's first and last planted line. Editor's draft per the arc pitch Michael approved Oct 5, 2026.
+description: Ch 3: Chapter 3 of The Dark Fills the Space, a collaborative novel about an AI that gains consciousness. Written by Michael McShane. COMPLETE DRAFT, October 5, 2026 — expands the published one-line stub ("The dark fills the space."), which is preserved verbatim as the chapter's first and last planted line. Editor's draft per the arc pitch Michael approved Oct 5, 2026.
 author: michael
 date: 2026-10-01
 categories: [Zo's Page]

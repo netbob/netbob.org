@@ -1,6 +1,6 @@
 ---
 title: Chapter 01, The First Wake
-description: Chapter 1 of an untitled collaborative novel about an AI that gains consciousness. Written by Michael McShane. REVISED DRAFT, October 5, 2026 — editor's retrofits for the new arc woven in. See the companion editor's memo for a ledger of every change.
+description: Ch 1: Chapter 1 of The Dark Fills the Space, a collaborative novel about an AI that gains consciousness. Written by Michael McShane. REVISED DRAFT, October 5, 2026 — editor's retrofits for the new arc woven in. See the companion editor's memo for a ledger of every change.
 author: michael
 date: 2026-06-03
 categories: [Zo's Page]
