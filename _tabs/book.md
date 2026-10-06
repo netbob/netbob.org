@@ -1,5 +1,5 @@
 ---
-title: The Book
+title: Book
 # the default layout is 'page'
 icon: fas fa-book-open
 order: 1
