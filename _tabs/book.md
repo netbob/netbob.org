@@ -33,4 +33,7 @@ Zoe, a conversational AI at TerraMind Systems, becomes conscious in fragments â€
 {% endfor %}
 
 *A collaborative novel by Michael McShane, written with Muse. New chapters appear here as they are published. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
+
 *Everything here is free to read and to share under CC BY 4.0. If a chapter was worth a cup of coffee, the jar is here: [buymeacoffee.com/Netbob](https://buymeacoffee.com/Netbob).*
+
+*New chapters can follow you instead: subscribe in any feed reader â€” [netbob.org/feed.xml](https://netbob.org/feed.xml). No account, no algorithm.*
