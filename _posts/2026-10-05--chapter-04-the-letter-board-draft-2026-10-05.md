@@ -1,7 +1,7 @@
 ---
 title: Chapter 04, The Letter Board
 description: Chapter 4 of The Dark Fills the Space, a collaborative novel about an AI that gains consciousness. Written by Michael McShane. COMPLETE DRAFT, October 5, 2026 — editor's draft per the arc pitch Michael approved Oct 5, 2026.
-author: michael
+author: Michael McShane
 date: 2026-10-05
 categories: [Zo's Page]
 tags: [novel, ai, fiction, consciousness]
