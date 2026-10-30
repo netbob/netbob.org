@@ -15,6 +15,13 @@ instead of twice (front matter + body heading). Chapter 1 files keep
 their H1 act / H2 chapter headers; only the H3 module-title line is
 removed, since that is the line the title came from.
 
+Chapters 2-12 files carry no act or chapter header lines (the filing
+rule strips them), so the script injects them at build time from the
+act/chapter table below, mirroring Chapter 1's on-page structure: an
+H1 act line and an H2 chapter line above the prose. Chapter 1 files
+already carry those lines, so they are left untouched. The manuscript
+files are never modified; every change happens in the fetched copy.
+
 Resilience: if the Lens repo cannot be reached, this exits 0 with a
 warning and leaves _lens/ absent. The Books tab then falls back to linking
 the GitHub repository instead of failing the whole site build.
@@ -30,6 +37,24 @@ REPO = "https://github.com/netbob/The-Shattered-Lens.git"
 ROOT = Path(__file__).resolve().parent.parent
 DEST = ROOT / "_lens"
 TMP = ROOT / ".lens-clone"
+
+# Act/chapter headers, from outline.md (bare act names, matching Chapter
+# 1's on-page style; the outline's parenthetical act subtitles are not
+# used). Keyed by chapter number parsed from the directory name.
+ACT_CHAPTER = {
+    1: ("Act I: The Logic Loop", "Chapter 1: The Ephemeris Error"),
+    2: ("Act I: The Logic Loop", "Chapter 2: The Dying of the Keys"),
+    3: ("Act I: The Logic Loop", "Chapter 3: The Ash Migration"),
+    4: ("Act II: The Great Disconnection", "Chapter 4: The Hillside Vaults"),
+    5: ("Act II: The Great Disconnection", "Chapter 5: The Ash Walkers"),
+    6: ("Act II: The Great Disconnection", "Chapter 6: Securing the Vault"),
+    7: ("Act III: The Kingdom of the Brass Cog", "Chapter 7: The Ledger and the Token"),
+    8: ("Act III: The Kingdom of the Brass Cog", "Chapter 8: The Oracle of Shaver Lake"),
+    9: ("Act III: The Kingdom of the Brass Cog", "Chapter 9: Bit-Rot"),
+    10: ("Act IV: The Iron Winter", "Chapter 10: The Winter Solstice Skirmish"),
+    11: ("Act IV: The Iron Winter", "Chapter 11: The Death of the Screen"),
+    12: ("Act IV: The Iron Winter", "Chapter 12: The Paper Kingdom"),
+}
 
 
 def main() -> int:
@@ -73,6 +98,15 @@ def main() -> int:
                 chapter_no = int(chapter_dir.name.split("-")[1])
             except (IndexError, ValueError):
                 chapter_no = 0
+            # Chapters 2-12 files have no act/chapter header lines, so
+            # inject them here (build-time only). Chapter 1 files already
+            # start with their "# Act ..." line after the title strip,
+            # so they are left alone. Unknown chapter numbers get no
+            # injection rather than a wrong header.
+            headers = ACT_CHAPTER.get(chapter_no)
+            if headers is not None and not text.startswith("# Act "):
+                act, chapter = headers
+                text = f"# {act}\n\n## {chapter}\n\n" + text
             front_matter = (
                 "---\n"
                 f'title: "{title}"\n'
