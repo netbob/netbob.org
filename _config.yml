@@ -167,6 +167,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  lens:
+    output: true
+    permalink: /lens/:path/
 
 defaults:
   - scope:

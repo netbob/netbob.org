@@ -32,3 +32,6 @@ assets/js/dist
 Thumbs.db
 
 memory/
+
+# Build-time Lens fetch (never committed)
+_lens/
