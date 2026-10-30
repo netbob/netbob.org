@@ -9,6 +9,12 @@ _lens/ preserving the chapter directories, and injects the YAML front
 matter Jekyll needs to render each module as a page. _lens/ is git-ignored
 build output, never committed.
 
+The heading line that supplies the front-matter title is removed from the
+body, so the rendered page shows the title once (from front matter)
+instead of twice (front matter + body heading). Chapter 1 files keep
+their H1 act / H2 chapter headers; only the H3 module-title line is
+removed, since that is the line the title came from.
+
 Resilience: if the Lens repo cannot be reached, this exits 0 with a
 warning and leaves _lens/ absent. The Books tab then falls back to linking
 the GitHub repository instead of failing the whole site build.
@@ -54,6 +60,15 @@ def main() -> int:
                 m = re.match(r"^# (.+)\n", text)
             title = m.group(1).strip() if m else src.stem
             title = title.replace('"', "'")
+            if m is not None:
+                # Drop the heading line that supplied the title, so the
+                # rendered page does not show it twice. Also drop the
+                # blank line that followed it, if any, so the body starts
+                # cleanly on the first prose paragraph.
+                start, end = m.span()
+                while end < len(text) and text[end] == "\n":
+                    end += 1
+                text = text[:start] + text[end:]
             try:
                 chapter_no = int(chapter_dir.name.split("-")[1])
             except (IndexError, ValueError):
