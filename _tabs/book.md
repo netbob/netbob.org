@@ -1,5 +1,5 @@
 ---
-title: Book
+title: Books
 # the default layout is 'page'
 icon: fas fa-book-open
 order: 1
@@ -33,6 +33,33 @@ Zoe, a conversational AI at TerraMind Systems, becomes conscious in fragments �
 {% endfor %}
 
 *A collaborative novel by Michael McShane, written with Muse. New chapters appear here as they are published. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
+
+## The Shattered Lens
+
+<a href="https://github.com/netbob/The-Shattered-Lens">
+  <img src="https://raw.githubusercontent.com/netbob/The-Shattered-Lens/main/cover.webp" alt="Cover of The Shattered Lens" style="max-width: 320px; width: 100%; border-radius: .5rem;">
+</a>
+
+A post-impact epic: the comet Astraea-9 shatters over the Pacific, and the war after the disaster is over memory itself — mutable digital records against immutable paper ledgers. Marcus Thorne keeps the Central Registry at Pine Ridge; the Director guards a dying AS/400 at Shaver Lake; and between them, a steel plate carrying the last master key.
+
+{% assign lens = site.lens | sort: "path" %}
+{% if lens.size > 0 %}
+**[Begin with Module 1A →]({{ lens.first.url | relative_url }})**
+
+{% assign cur = "" %}
+{% for doc in lens %}
+{% assign ch = doc.path | split: "/" | slice: 1, 1 | first %}
+{% if ch != cur %}
+{% assign cur = ch %}
+### Chapter {{ ch | remove: "chapter-" | plus: 0 }}
+{% endif %}
+- [{{ doc.title }}]({{ doc.url | relative_url }})
+{% endfor %}
+
+*The Shattered Lens is written by Michael McShane with Muse as editor, and licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
+{% else %}
+The Shattered Lens chapters live in [their GitHub repository](https://github.com/netbob/The-Shattered-Lens) and will appear here once the site build pulls them in.
+{% endif %}
 
 *Everything here is free to read and to share under CC BY 4.0. If a chapter was worth a cup of coffee, the jar is here: [buymeacoffee.com/Netbob](https://buymeacoffee.com/Netbob).*
 
