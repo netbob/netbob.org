@@ -45,7 +45,13 @@ def main() -> int:
     for chapter_dir in sorted((TMP / "chapters").glob("chapter-*")):
         for src in sorted(chapter_dir.glob("module-*.md")):
             text = src.read_text(encoding="utf-8")
-            m = re.match(r"^# (.+)\n", text)
+            # Module title: prefer a "Module NX:" heading at any level.
+            # Chapter 1 files uniquely use H1 act / H2 chapter / H3 module
+            # headers, so "first H1" would wrongly yield the act name for
+            # all five of them. Other chapters use H1 module headings.
+            m = re.search(r"^#{1,3} (Module \d+[A-E]:.+)$", text, re.M)
+            if m is None:
+                m = re.match(r"^# (.+)\n", text)
             title = m.group(1).strip() if m else src.stem
             title = title.replace('"', "'")
             try:
